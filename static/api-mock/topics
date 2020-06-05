@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Влияние грозы на беременность козы",
+      "brief": "According to the Edamam API documentation, we are required to use a param called q that contains our query string. We will set this value to the plan parameter that is passed into our method.",
+      "author": {
+        "id": 1,
+        "name": "Остап Бендер"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Особенности национальной охоты",
+      "brief": "The documentation also requires us to supply params for app_id and app_key. You will need to set these values to your keys you were assigned when you signed up for the Edamam API.",
+      "author": {
+        "id": 2,
+        "name": "Сергей Иванов"
+      }
+    }
+  ]
+}
