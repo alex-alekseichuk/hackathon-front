@@ -20,6 +20,15 @@
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
+          <v-chip
+            v-if="item.title=='Quizzes'"
+            x-small
+            class="ma-2"
+            color="red"
+            text-color="white"
+          >
+            1
+          </v-chip>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -49,7 +58,7 @@
 <!--      </v-btn>-->
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-toolbar-title v-text="username" />
+      <v-toolbar-title v-text="name" />
 <!--      <v-btn-->
 <!--        icon-->
 <!--        @click.stop="rightDrawer = !rightDrawer"-->
@@ -83,7 +92,7 @@
       :fixed="fixed"
       app
     >
-      <span>Микрофоны включены &copy; {{ new Date().getFullYear() }}</span>
+      <span>After Party &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -97,9 +106,34 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Выступления',
+          icon: 'mdi-calendar',
+          title: 'Talks',
           to: '/'
+        },
+        // {
+        //   icon: 'mdi-apps',
+        //   title: 'Talks',
+        //   to: '/'
+        // },
+        {
+          icon: 'mdi-lightbulb-on',
+          title: 'Quizzes',
+          to: '/quizzes'
+        },
+        {
+          icon: 'mdi-arm-flex',
+          title: 'Challenges',
+          to: '/challenges'
+        },
+        {
+          icon: 'mdi-gift',
+          title: 'Prizes',
+          to: '/prizes'
+        },
+        {
+          icon: 'mdi-account-cog',
+          title: 'My Profile',
+          to: '/my-profile'
         },
         // {
         //   icon: 'mdi-chart-bubble',
@@ -110,13 +144,16 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Микрофоны включены'
+      title: 'After Party'
     }
   },
   computed: {
-    username () {
-      return this.$store.state.username
+    name () {
+      return this.$store.state.name
     }
+  },
+  created() {
+    this.$store.dispatch('loadMyProfile')
   }
 }
 </script>

@@ -1,0 +1,37 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Golang for Web debelopment",
+      "brief": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.",
+      "url": "https://hack1.leadersofdigital.ru/home.html",
+      "date": "2020-06-04",
+      "start": "14:00",
+      "end": "15:00",
+      "speakers": [{
+        "id": 1,
+        "name": "Rick Sanchez",
+        "imgUrl": "/user-imgs/1.jpg"
+      }],
+      "quizId": 1,
+      "challengeId": 1,
+      "prizes": {
+      }
+    },
+    {
+      "id": 2,
+      "title": "Docker and Kubernetes in daily practice",
+      "brief": "Originally developed by Google, Kubernetes is an open source container orchestrator which has become a de facto standard in managing containerized environments. Kubernetes supports popular container tools like Docker, and delivers a platform for automating deployment, scaling, and management of containerized applications across clusters of hosts.",
+      "url": "https://hack1.leadersofdigital.ru/home.html",
+      "date": "2020-06-04",
+      "start": "16:00",
+      "end": "17:00",
+      "speakers": [{
+        "id": 2,
+        "name": "Bill Gates",
+        "imgUrl": "/user-imgs/2.jpg"
+      }],
+      "quizId": 2
+    }
+  ]
+}

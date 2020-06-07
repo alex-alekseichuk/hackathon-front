@@ -9,18 +9,18 @@
       sm8
       md6
     >
-      <topics />
+      <quizzes />
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 
-import Topics from '~/components/Topics.vue'
+import Quizzes from '~/components/Quizzes.vue'
 
 export default {
   components: {
-    Topics,
+    Quizzes,
   },
   created() {
   }

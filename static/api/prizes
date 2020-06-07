@@ -1,0 +1,46 @@
+{
+  "prizes": [
+    {
+      "id": 1,
+      "topic": {
+        "id": 1,
+        "title": "Golang for Web debelopment"
+      },
+      "winners": [
+        {
+          "userId": 1,
+          "name": "Rick Sanchez",
+          "brief": "T-shirt for best question"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topic": {
+        "id": 1,
+        "title": "Golang for Web debelopment"
+      },
+      "quiz": {
+        "id": 1,
+        "title": "About People and colors of Hackathon #1 Intro"
+      },
+      "winners": [
+        {
+          "userId": 1,
+          "name": "Rick Sanchez",
+          "brief": "T-shirt for 1-st result in the Quiz"
+        },
+        {
+          "userId": 4,
+          "name": "Harry Potter",
+          "brief": "T-shirt for 2-nd result in the Quiz"
+        },
+        {
+          "userId": 5,
+          "name": "Dale Cooper",
+          "brief": "T-shirt for 3-st result in the Quiz"
+        }
+      ]
+    }
+  ]
+}

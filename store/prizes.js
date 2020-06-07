@@ -3,18 +3,18 @@ export const state = () => ({
 })
 
 export const mutations = {
-  loaded (state, {topics}) {
-    state.list = topics
+  loaded (state, {prizes}) {
+    state.list = prizes
   }
 }
 
 export const actions = {
   async load ({commit, state}) {
     try {
-      const response = await this.$api.get('/topics');
-      commit('loaded', {topics: response.data.topics})
+      const response = await this.$api.get('/prizes');
+      commit('loaded', {prizes: response.data.prizes})
     } catch (err) {
-      console.log(`Can't load topics`);
+      console.log(`Can't load prizes`);
       console.log(err);
     }
   }
